@@ -1,0 +1,8 @@
+For evaluation:
+python object_detection/eval.py --logtostderr --checkpoint_dir=/home/gaurav/models/research/object_detection/tensorflow_local/models/model/train --eval_dir=/home/gaurav/models/research/object_detection/tensorflow_local/models/model/eval --pipeline_config_path=/home/gaurav/models/research/object_detection/tensorflow_local/models/model/ssd_mobilenet_v1_coco.config 
+
+For Training
+python object_detection/train.py --logtostderr --train_dir=/home/gaurav/models/research/object_detection/tensorflow_local/models/model/train --pipeline_config_path=/home/gaurav/models/research/object_detection/tensorflow_local/models/model/ssd_mobilenet_v1_coco.config
+
+For running tensorboard:
+tensorboard --logdir=home/gaurav/models/research/object_detection/tensorflow_local/models/model/train
