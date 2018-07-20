@@ -1,0 +1,10 @@
+For converting to tfrecord format use:
+python2.7 convert.py ../Images/003_train ../Labels/003_no_swap_for_train ../train.tfrecords
+
+For generating images from rosbag:
+
+1>> First run master: roscore
+2>> play the bag file.
+3>> run the following command from directory where you want to store the image.
+	rosrun image_view extract_images _image_transport:=compressed _file_format:=frame%03i.jpg _sec_per_frame:=7 /image/compressed:=/camera_a0
+
