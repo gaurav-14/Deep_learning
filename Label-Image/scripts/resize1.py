@@ -5,7 +5,7 @@ from PIL import Image
 
 width = 600
 height = 600
-directory = '../Images/003'
+directory = '../Extracted_data/Images/003/'
 
 for image in os.listdir(directory):
     print('Resizing image ' + image)
