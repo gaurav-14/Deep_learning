@@ -21,6 +21,9 @@ COLORS = ['red', 'blue', 'olive', 'teal', 'cyan', 'green', 'black']
 # image sizes for the examples
 SIZE = 600,600
 
+output_label_dir = '../Extracted_data/Labels'
+image_dir = '../Extracted_data/Images'
+
 class LabelTool():
     def __init__(self, master):
         # set up the main frame
@@ -152,7 +155,7 @@ class LabelTool():
 ##            tkMessageBox.showerror("Error!", message = "The specified dir doesn't exist!")
 ##            return
         # get image list
-        self.imageDir = os.path.join(r'../Images', '%03d' %(self.category))
+        self.imageDir = os.path.join(image_dir, '%03d' %(self.category))
         #print self.imageDir 
         #print self.category
         self.imageList = glob.glob(os.path.join(self.imageDir, '*.jpg'))
@@ -166,7 +169,7 @@ class LabelTool():
         self.total = len(self.imageList)
 
          # set up output dir
-        self.outDir = os.path.join(r'../Labels', '%03d' %(self.category))
+        self.outDir = os.path.join(output_label_dir, '%03d' %(self.category))
         if not os.path.exists(self.outDir):
             os.mkdir(self.outDir)
         
