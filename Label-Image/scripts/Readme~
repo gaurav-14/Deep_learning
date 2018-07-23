@@ -1,0 +1,37 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+Install folowing to use main.py
+sudo apt-get install python-imaging python-imaging-tk
+
+Steps to go from bagfile to tfrecord file
+
+>>>>>>> cad6c39d7400475973574ffe72a31d7baefc340e
+
+For generating images from rosbag:
+First run ros master: roscore 
+Play the bag file: rosbag play bagfilename.bag
+Run the following command from directory where you want to store the image.
+	rosrun image_view extract_images _image_transport:=compressed _file_format:=frame%03i.jpg 
+	_sec_per_frame:=7 /image/compressed:=/camera_a0
+
+For resizing image to a particular fixed size:
+Modify path to the image folder in resize.py script
+Run the script: python resize.py
+
+For Annotation:
+Create a class.txt file containing multi-class name which you want to annotate.
+Use main.py by giving appropriate image directory and label directory in it.
+Run: python main.py from scripts folder.
+Create Bounding Box and give class name to each from drop-down menu provided of GUI.
+All labeled files will be stored in the label directory you have provided in main.py
+
+For converting to tfrecord format use:
+First create train.records file and give it write permission.
+Execute:  python convert.py path_to_image_dir  path_to_label_dir path_to_recordfile
+          E.g.: python2.7 convert.py ../Images/003 ../Labels/003 ../003.tfrecords
+
+
+<<<<<<< HEAD
+	
+=======
+>>>>>>> 4bfc56c62c751c91be0af8ebf04b57ff0ca3f978
