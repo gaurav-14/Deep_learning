@@ -1,8 +1,15 @@
+<<<<<<< HEAD
 Install folowing to use main.py
 sudo apt-get install python-imaging python-imaging-tk
 
 Steps to go from bagfile to tfrecord file
 
+=======
+
+Steps to go from bagfile to tfrecord file
+
+
+>>>>>>> cad6c39d7400475973574ffe72a31d7baefc340e
 For generating images from rosbag:
 First run ros master: roscore 
 Play the bag file: rosbag play bagfilename.bag

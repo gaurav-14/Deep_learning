@@ -155,7 +155,10 @@ class LabelTool():
 ##            tkMessageBox.showerror("Error!", message = "The specified dir doesn't exist!")
 ##            return
         # get image list
+<<<<<<< HEAD
 
+=======
+>>>>>>> cad6c39d7400475973574ffe72a31d7baefc340e
         self.imageDir = os.path.join(image_dir, '%03d' %(self.category))
         #print self.imageDir 
         #print self.category
@@ -171,7 +174,10 @@ class LabelTool():
 
          # set up output dir
         self.outDir = os.path.join(output_label_dir, '%03d' %(self.category))
+<<<<<<< HEAD
 
+=======
+>>>>>>> cad6c39d7400475973574ffe72a31d7baefc340e
         if not os.path.exists(self.outDir):
             os.mkdir(self.outDir)
         
@@ -193,7 +199,12 @@ class LabelTool():
             new_size = int(r * im.size[0]), int(r * im.size[1])
             self.tmp.append(im.resize(new_size, Image.ANTIALIAS))
             self.egList.append(ImageTk.PhotoImage(self.tmp[-1]))
+<<<<<<< HEAD
             self.egLabels[i].config(image = self.egList[-1], width = SIZE[0]/1000, height = SIZE[1]/1000)#reduced size of demo examples
+=======
+            self.egLabels[i].config(image = self.egList[-1], width = SIZE[0]/1000, height = SIZE[1]/1000)
+
+>>>>>>> cad6c39d7400475973574ffe72a31d7baefc340e
         self.loadImage() 
         print '%d images loaded from %s' %(self.total, s) 
         
