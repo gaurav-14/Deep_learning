@@ -5,7 +5,7 @@ from PIL import Image
 
 width = 600
 height = 600
-directory = '/home/arc/Deep_learning/Label-Image/Extracted_data/Images/001/'
+directory = '../Extracted_data/Images/004/'
 
 for image in os.listdir(directory):
     print('Resizing image ' + image)
