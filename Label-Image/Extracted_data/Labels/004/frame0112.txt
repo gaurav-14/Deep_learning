@@ -1,0 +1,7 @@
+102 304 125 354 motorcycle
+1 309 16 380 motorcycle
+389 267 407 344 person
+460 270 470 311 person
+104 275 123 311 person
+47 269 97 325 car
+33 260 43 298 car
