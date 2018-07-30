@@ -31,7 +31,7 @@ LabelTool
 |  
 |--Extracted_data/Labels/   *# direcotry for the labeling results*  
 |
-|--Extracted_datat/frecords/ *#direcory containing all tfrecords file*
+|--Extracted_datat/frecords/   *#direcory containing all tfrecords file*        
 |
 |--Examples/  *# direcotry for the example bboxes*  
 
