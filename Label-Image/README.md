@@ -30,9 +30,8 @@ LabelTool
 |--Extracted_data/Images/   *# direcotry containing the images to be labeled*  
 |  
 |--Extracted_data/Labels/   *# direcotry for the labeling results*  
-|
-|--Extracted_datat/frecords/   *#direcory containing all tfrecords file*        
-|
+|                                                                                                                             
+|--Extracted_datat/frecords/   *#direcory containing all tfrecords file*                                                      |                                                                                                                             
 |--Examples/  *# direcotry for the example bboxes*  
 
 Dependency
