@@ -56,11 +56,5 @@ Usage
 
 Modifications:
 main.py is modified so that it can be stored in separate directory,here scripts and still able to search the images and labels folder.
-<<<<<<< HEAD
-<<<<<<< HEAD
 Images and Labels directory path has to be specified in main.py 
-Script is modified so that it just writes bounding box co-ordinates followed by class name instead of number of entries in the file at beginning. Line 238
-=======
->>>>>>> 4bfc56c62c751c91be0af8ebf04b57ff0ca3f978
-=======
->>>>>>> cad6c39d7400475973574ffe72a31d7baefc340e
+
