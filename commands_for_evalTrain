@@ -1,18 +1,11 @@
+For Training:
+
+python object_detection/train.py --logtostderr --train_dir=/home/arc/tensorflow/models/research/object_detection/tensorflow_local/models/model/train --pipeline_config_path=/home/arc/tensorflow/models/research/object_detection/tensorflow_local/models/model/configs/ssd_mobilenet_v1_coco.config
+
 For evaluation:
-<<<<<<< HEAD
-python object_detection/eval.py --logtostderr --checkpoint_dir=/home/arc/tensorflow/models/research/object_detection/tensorflow_local/models/model/train --eval_dir=/home/arc/tensorflow/models/research/object_detection/tensorflow_local/models/model/eval --pipeline_config_path=/home/arc/tensorflow/models/research/object_detection/tensorflow_local/models/model/ssd_mobilenet_v1_coco.config 
 
-For Training
-python object_detection/train.py --logtostderr --train_dir=/home/arc/tensorflow/models/research/object_detection/tensorflow_local/models/model/train --pipeline_config_path=/home/arc/tensorflow/models/research/object_detection/tensorflow_local/models/model/ssd_mobilenet_v1_coco.config
+python object_detection/eval.py --logtostderr --checkpoint_dir=/home/arc/tensorflow/models/research/object_detection/tensorflow_local/models/model/train --eval_dir=/home/arc/tensorflow/models/research/object_detection/tensorflow_local/models/model/eval --pipeline_config_path=/home/arc/tensorflow/models/research/object_detection/tensorflow_local/models/model/configs/ssd_mobilenet_v1_coco.config 
 
 For running tensorboard:
+
 tensorboard --logdir=/home/arc/tensorflow/models/research/object_detection/tensorflow_local/models/model/train
-=======
-python object_detection/eval.py --logtostderr --checkpoint_dir=/home/gaurav/models/research/object_detection/tensorflow_local/models/model/train --eval_dir=/home/gaurav/models/research/object_detection/tensorflow_local/models/model/eval --pipeline_config_path=/home/gaurav/models/research/object_detection/tensorflow_local/models/model/ssd_mobilenet_v1_coco.config 
-
-For Training
-python object_detection/train.py --logtostderr --train_dir=/home/gaurav/models/research/object_detection/tensorflow_local/models/model/train --pipeline_config_path=/home/gaurav/models/research/object_detection/tensorflow_local/models/model/ssd_mobilenet_v1_coco.config
-
-For running tensorboard:
-tensorboard --logdir=home/gaurav/models/research/object_detection/tensorflow_local/models/model/train
->>>>>>> cad6c39d7400475973574ffe72a31d7baefc340e
