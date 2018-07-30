@@ -42,7 +42,7 @@ PIL-1.1.7.win32-py2.7
 
 Startup
 -------
-#From /Label-Image/Scripts/
+#From /Label-Image/Scripts
 $ python main.py
 
 Usage
