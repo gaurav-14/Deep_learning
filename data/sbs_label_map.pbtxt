@@ -1,0 +1,37 @@
+item {
+  id: 1
+  name: 'car'
+}
+
+
+item {
+  id: 2
+  name: 'van'
+}
+
+item {
+  id: 3
+  name: 'truck'
+}
+
+
+item {
+  id: 4
+  name: 'person'
+}
+
+item {
+  id: 5
+  name: 'bicycle'
+}
+
+
+item {
+  id: 6
+  name: 'bus'
+}
+
+item {
+  id: 7
+  name: 'motorcycle'
+}
