@@ -1,11 +1,25 @@
-For Training:
-
+#For Training:
 python object_detection/train.py --logtostderr --train_dir=/home/arc/tensorflow/models/research/object_detection/tensorflow_local/models/model/train --pipeline_config_path=/home/arc/tensorflow/models/research/object_detection/tensorflow_local/models/model/configs/ssd_mobilenet_v1_coco.config
 
-For evaluation:
-
+#For evaluation:
 python object_detection/eval.py --logtostderr --checkpoint_dir=/home/arc/tensorflow/models/research/object_detection/tensorflow_local/models/model/train --eval_dir=/home/arc/tensorflow/models/research/object_detection/tensorflow_local/models/model/eval --pipeline_config_path=/home/arc/tensorflow/models/research/object_detection/tensorflow_local/models/model/configs/ssd_mobilenet_v1_coco.config 
 
-For running tensorboard:
-
+#For running tensorboard:
 tensorboard --logdir=/home/arc/tensorflow/models/research/object_detection/tensorflow_local/models/model/train
+
+
+## export new frozen model from a pre-trained checkpoint
+# From tensorflow/models/research
+python object_detection/export_inference_graph.py \
+    --input_type image_tensor \
+    --pipeline_config_path ../stuff/ssd_mobilenet_v11_coco.config \
+    --trained_checkpoint_prefix ../stuff/ssd_mobilenet_checkpoints/model.ckpt \
+    --output_directory ../models/ssd_mobilenet_v11_coco
+
+## optimize frozen model for inference
+python -m tensorflow.python.tools.optimize_for_inference \
+	--input ../models/ssd_mobilenet_v11_coco/frozen_inference_graph.pb \
+	--output ../models/ssd_mobilenet_v11_coco/optimized_inference_graph.pb \
+	--input_names=image_tensor \
+	--output_names=detection_boxes,detection_scores,num_detections,detection_classes
+
