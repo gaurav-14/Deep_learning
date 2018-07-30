@@ -1,5 +1,5 @@
 
-Script main.py requires directory name should be integer
+Script main.py requires integer directory name 
 
 Directories: 
 001 --> gmsl_2018-04-10-08-28-25.bag topic=/camera_a3
