@@ -2,6 +2,8 @@
 Testing custom dataset with pre-trained ssd_mobilenetv1
 
 # Pre-requisites
+Follow installation instruction of tensorflow: https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md
+
 Clone this repository into /models/research/objection_detection/
 
 # Directory Structure
