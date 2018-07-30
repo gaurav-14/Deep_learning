@@ -60,9 +60,10 @@ Usage
 
 Modifications:
 main.py is modified so that it can be stored in separate directory,here scripts and still able to search the images and labels folder.
-Images and Labels directory path has to be specified in main.py
 
-# Note:
+#Note:
 script main.py creates label-file with initial entry of number of bounding boxes in images.
 Later, when converting to tfrecord fileformat script convert.py ignores the first line of entry from label-file.
+
+Images and Labels directory path has to be specified in main.py
 
