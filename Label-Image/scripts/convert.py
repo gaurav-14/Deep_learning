@@ -60,7 +60,7 @@ def create_tf_example(filename, label_file):
             xmaxs.append(float(row[2]) / width)
             ymins.append(float(row[1]) / height)
             ymaxs.append(float(row[3]) / height)
-
+            
     tf_example = tf.train.Example(features=tf.train.Features(feature={
       'image/height': dataset_util.int64_feature(height),
       'image/width': dataset_util.int64_feature(width),

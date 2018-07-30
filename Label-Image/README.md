@@ -67,3 +67,4 @@ Later, when converting to tfrecord fileformat script convert.py ignores the firs
 
 Images and Labels directory path has to be specified in main.py
 
+

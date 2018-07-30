@@ -237,7 +237,7 @@ class LabelTool():
 
         with open(self.labelfilename, 'w') as f:
 
-            #f.write('%d\n' %len(self.bboxList))  
+            f.write('%d\n' %len(self.bboxList))  
             for bbox in self.bboxList:	
                 f.write(' '.join(map(str, bbox)) + '\n')
                
