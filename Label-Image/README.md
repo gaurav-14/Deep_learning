@@ -25,12 +25,14 @@ Data Organization
 -----------------
 LabelTool  
 |  
-|--main.py   *# source code for the tool*  
+|--Scripts/main.py   *# source code for the tool*  
 |  
-|--Images/   *# direcotry containing the images to be labeled*  
+|--Extracted_data/Images/   *# direcotry containing the images to be labeled*  
 |  
-|--Labels/   *# direcotry for the labeling results*  
-|  
+|--Extracted_data/Labels/   *# direcotry for the labeling results*  
+|
+|--Extracted_datat/frecords/ *#direcory containing all tfrecords file*
+|
 |--Examples/  *# direcotry for the example bboxes*  
 
 Dependency
@@ -40,6 +42,7 @@ PIL-1.1.7.win32-py2.7
 
 Startup
 -------
+#From /Label-Image/Scripts/
 $ python main.py
 
 Usage
@@ -56,5 +59,9 @@ Usage
 
 Modifications:
 main.py is modified so that it can be stored in separate directory,here scripts and still able to search the images and labels folder.
-Images and Labels directory path has to be specified in main.py 
+Images and Labels directory path has to be specified in main.py
+
+# Note:
+script main.py creates label-file with initial entry of number of bounding boxes in images.
+Later, when converting to tfrecord fileformat script convert.py ignores the first line of entry from label-file.
 
